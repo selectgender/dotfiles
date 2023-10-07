@@ -1,0 +1,161 @@
+/* Start flavours */
+:root {
+  --base00: #36211b;
+  --base01: #56433c;
+  --base02: #76655e;
+  --base03: #968680;
+  --base04: #b5a8a2;
+  --base05: #d5cac3;
+  --base06: #dbd2cc;
+  --base07: #e1dad5;
+  --base08: #73797c;
+  --base09: #697996;
+  --base0A: #a26a5d;
+  --base0B: #656fd4;
+  --base0C: #868c96;
+  --base0D: #687995;
+  --base0E: #897189;
+  --base0F: #706ecc;
+}
+/* End flavours */
+
+/* hide some bullshit */
+#navigator-toolbox #new-tab-button,  /* use ctrl-t */
+#navigator-toolbox #list-all-tabs-button,
+#navigator-toolbox .list-all-tabs-button,
+#navigator-toolbox #reload-button,   /* use ctrl-r */
+#navigator-toolbox #back-button,     /* alt-left or shift-h */
+#navigator-toolbox #forward-button,  /* alt-right or shift-l */
+#navigator-toolbox .tab-close-button /* ctrl-w */
+{
+  display: none;
+}
+
+/*
+ * nav bar
+ */
+#navigator-toolbox {
+  font-family: 'JetBrains Mono' !important;
+  font-size: 12px;
+  line-height: 16px;
+  border-bottom: none !important;
+}
+#navigator-toolbox toolbarspring {
+  display: none;
+}
+#navigator-toolbox .tab-line {
+  display: none;
+}
+#navigator-toolbox #urlbar-container {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+#navigator-toolbox #urlbar {
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+#navigator-toolbox #urlbar-background {
+  background: var(--base00) !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+#navigator-toolbox #urlbar {
+  background: var(--base00) !important;
+  color: var(--base04) !important;
+  padding: 0 !important;
+  padding-left: 6px !important;
+}
+#navigator-toolbox #tracking-protection-icon-container {
+  display: none;
+}
+#navigator-toolbox #urlbar-zoom-button {
+  border: none !important;
+}
+
+/*
+ * buttons
+ */
+#navigator-toolbox #PanelUI-button {
+  border: none !important;
+}
+#navigator-toolbox #nav-bar {
+  background: var(--base00) !important;
+}
+#navigator-toolbox .toolbarbutton-1 {
+  width: 40px;
+  background: var(--base00);
+  border-left: solid 1px var(--base00);
+  box-shadow: none !important;
+}
+#navigator-toolbox #PanelUI-menu-button {
+  background: var(--base00);
+  border: none;
+}
+#navigator-toolbox toolbarbutton image {
+  color: var(--base04) !important;
+}
+#navigator-toolbox #PanelUI-menu-button image {
+  display: block;
+  color: var(--base04) !important;
+}
+
+/*
+ * tabs
+ */
+#navigator-toolbox .tab-content {
+  font-size: 12px;
+  line-height: 14px;
+  padding: 1px 4px 1px 5px !important;
+}
+#tabbrowser-tabs,
+#tabbrowser-arrowscrollbox {
+  min-height: 0 !important;
+}
+#navigator-toolbox .toolbar-items {
+  background: var(--base00);
+}
+#navigator-toolbox .tab-background {
+  background: var(--base00) !important;
+  border: none !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+#navigator-toolbox .tabbrowser-tab .tab-label {
+  color: var(--base07) !important;
+}
+#navigator-toolbox .tab-background .tab-line {
+  display: none;
+}
+#navigator-toolbox .tabbrowser-tab::after {
+  display: none !important;
+}
+#navigator-toolbox .tab-icon-image {
+  margin-top: 0 !important;
+}
+
+#navigator-toolbox .tab-background[selected='true'] {
+  background: var(--base07) !important;
+}
+#navigator-toolbox .tabbrowser-tab[selected='true'] .tab-label {
+  color: var(--base00) !important;
+}
+#navigator-toolbox .tab-background .tab-line {
+  display: none;
+}
+
+/*
+ * bookmarks
+ */
+
+#nav-bar {
+  background-color: var(--base00) !important;
+  color: var(--base05) !important;
+}
+
+/* bar color */
+#main-window #PersonalToolbar {
+  background-color: var(--base00) !important;
+  color: var(--base05) !important;
+}

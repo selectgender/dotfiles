@@ -1,0 +1,5 @@
+#!/bin/zsh
+# stands for "github token"
+# i aint getting this shit manually
+
+cat ~/dox/secrets/github_token | xclip -selection clipboard

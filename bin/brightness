@@ -1,0 +1,4 @@
+#!/bin/zsh
+BRIGHTNESS=$(gum choose {1..9})
+xrandr --output eDP-1 --brightness 0.$BRIGHTNESS
+

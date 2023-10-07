@@ -1,0 +1,5 @@
+#!/bin/zsh
+# yeah I know this is hacky as shit but if it works it works
+nvim --listen /tmp/nvim.pipe &
+nvim --server /tmp/nvim.pipe --remote-send ":lua require('modules.base16').compile()<CR>"
+nvim --server /tmp/nvim.pipe --remote-send ":q<CR>"

@@ -1,0 +1,30 @@
+shell = 'zsh -c "{}"'
+
+[[items]]
+file = "~/.dotfiles/.config/bspwm/colors"
+template = "bspwm"
+hook = "~/.dotfiles/.config/bspwm/colors"
+rewrite = true
+
+[[items]]
+file = "~/.dotfiles/.config/alacritty/colors.yml"
+template = "alacritty"
+rewrite = true
+
+[[items]]
+file = "~/.dotfiles/.config/nvim/lua/modules/base16/theme.lua"
+template = "nvim"
+rewrite = true
+hook = "~/.dotfiles/.config/flavours/scripts/reloadnvim"
+
+[[items]]
+file = "~/.dotfiles/firefox/userChrome.css"
+template = "firefox"
+start = "/* Start flavours */"
+end = "/* End flavours */"
+
+[[items]]
+file = "~/.dotfiles/firefox/userContent.css"
+template = "firefox"
+start = "/* Start flavours */"
+end = "/* End flavours */"

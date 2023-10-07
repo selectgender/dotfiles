@@ -1,3 +1,15 @@
+# exports
+export PATH="/home/$USER/bin:$PATH"
+export EDITOR=nvim
+
+# aliases
+alias br="brightness"
+alias vl="volume"
+alias wttr="curl wttr.in"
+
+# 2>/dev/null just straight up eradicates the errors
+alias cz='cd $(find . -type d -print 2>/dev/null | fzf)'
+
 # completion and prompts
 autoload -Uz compinit promptinit
 compinit
@@ -11,12 +23,6 @@ prompt walters
 
 # completion menu
 zstyle ':completion:*' menu select
-
-# set editor
-export EDITOR=nvim
-
-# aliases
-alias listpkgs="comm -23 <(pacman -Qqt | sort) <(pacman -Qqg base | sort)"
 
 # custom starship prompt (https://starship.rs)
 eval "$(starship init zsh)"

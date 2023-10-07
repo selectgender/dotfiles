@@ -123,3 +123,10 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#
+# custom shit
+# 
+
+super + shift + s
+    scrot -s 'screenshot_%Y%m%d_%H%M%S.png' -e 'mkdir -p ~/imgs/screenshots && mv $f ~/imgs/screenshots && xclip -selection clipboard -t image/png -i ~/imgs/screenshots/`ls -1 -t ~/imgs/screenshots | head -1`'
